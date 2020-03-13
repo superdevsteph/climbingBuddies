@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+                template="/WEB-INF/jsp/layout/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/layout/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
+    </definition>
+
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="Escalade" />
+        <put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+    </definition>
+
+    <definition name="login" extends="base.definition">
+        <put-attribute name="title" value="Page d'authentification" />
+        <put-attribute name="body" value="/WEB-INF/jsp/user/login.jsp" />
+    </definition>
+
+    <definition name="listuser" extends="base.definition">
+        <put-attribute name="title" value="List user escalade" />
+        <put-attribute name="body" value="/WEB-INF/jsp/user/listuser.jsp" />
+    </definition>
+
+    <definition name="searchhome" extends="base.definition">
+        <put-attribute name="title" value="Recherche" />
+        <put-attribute name="body" value="/WEB-INF/jsp/search/searchhome.jsp" />
+    </definition>
+
+    <definition name="searchsites" extends="base.definition">
+        <put-attribute name="title" value="Recherche sites" />
+        <put-attribute name="body" value="/WEB-INF/jsp/search/searchsites.jsp" />
+    </definition>
+
+    <definition name="registeruser" extends="base.definition">
+        <put-attribute name="title" value="S'enregister" />
+        <put-attribute name="body" value="/WEB-INF/jsp/user/registeruser.jsp" />
+    </definition>
+
+    <definition name="moncompte" extends="base.definition">
+        <put-attribute name="title" value="Mon compte" />
+        <put-attribute name="body" value="/WEB-INF/jsp/user/moncompte.jsp" />
+    </definition>
+
+    <definition name="sitedetails" extends="base.definition">
+        <put-attribute name="title" value="Détails du site" />
+        <put-attribute name="body" value="/WEB-INF/jsp/site/sitedetails.jsp" />
+    </definition>
+
+    <definition name="sitechange" extends="base.definition">
+        <put-attribute name="title" value="Modification du site" />
+        <put-attribute name="body" value="/WEB-INF/jsp/site/sitechange.jsp" />
+    </definition>
+
+    <definition name="addnewsite" extends="base.definition">
+        <put-attribute name="title" value="Ajouter un nouveau site" />
+        <put-attribute name="body" value="/WEB-INF/jsp/site/addnewsite.jsp" />
+    </definition>
+
+    <definition name="addnewsecteur" extends="base.definition">
+        <put-attribute name="title" value="Ajouter un nouveau secteur" />
+        <put-attribute name="body" value="/WEB-INF/jsp/secteur/addnewsecteur.jsp" />
+    </definition>
+
+    <definition name="secteurchange" extends="base.definition">
+        <put-attribute name="title" value="Modification du secteur" />
+        <put-attribute name="body" value="/WEB-INF/jsp/secteur/secteurchange.jsp" />
+    </definition>
+
+    <definition name="voiechange" extends="base.definition">
+        <put-attribute name="title" value="Modification d'une voie" />
+        <put-attribute name="body" value="/WEB-INF/jsp/voie/voiechange.jsp" />
+    </definition>
+
+    <definition name="addnewvoie" extends="base.definition">
+        <put-attribute name="title" value="Ajouter une voie" />
+        <put-attribute name="body" value="/WEB-INF/jsp/voie/addnewvoie.jsp" />
+    </definition>
+
+    <definition name="longueurchange" extends="base.definition">
+        <put-attribute name="title" value="Modification d'une longueur" />
+        <put-attribute name="body" value="/WEB-INF/jsp/longueur/longueurchange.jsp" />
+    </definition>
+
+    <definition name="addnewlongueur" extends="base.definition">
+        <put-attribute name="title" value="Ajouter une longueur" />
+        <put-attribute name="body" value="/WEB-INF/jsp/longueur/addnewlongueur.jsp" />
+    </definition>
+
+    <definition name="commentlist" extends="base.definition">
+        <put-attribute name="title" value="Lister les commentaires" />
+        <put-attribute name="body" value="/WEB-INF/jsp/comment/commentlist.jsp" />
+    </definition>
+
+    <definition name="commentnew" extends="base.definition">
+        <put-attribute name="title" value="Nouveau commentaire" />
+        <put-attribute name="body" value="/WEB-INF/jsp/comment/commentnew.jsp" />
+    </definition>
+
+    <definition name="commentchange" extends="base.definition">
+        <put-attribute name="title" value="Changer un commentaire" />
+        <put-attribute name="body" value="/WEB-INF/jsp/comment/commentchange.jsp" />
+    </definition>
+
+    <definition name="personnalspacehome" extends="base.definition">
+        <put-attribute name="title" value="Espace personnel" />
+        <put-attribute name="body" value="/WEB-INF/jsp/personnalspace/personnalspacehome.jsp" />
+    </definition>
+
+    <definition name="addtopo" extends="base.definition">
+        <put-attribute name="title" value="Add topo" />
+        <put-attribute name="body" value="/WEB-INF/jsp/personnalspace/addtopo.jsp" />
+    </definition>
+
+    <definition name="listtopodispo" extends="base.definition">
+        <put-attribute name="title" value="List topo dispo" />
+        <put-attribute name="body" value="/WEB-INF/jsp/personnalspace/listtopodispo.jsp" />
+    </definition>
+
+    <definition name="toporesa" extends="base.definition">
+        <put-attribute name="title" value="Demande de resa" />
+        <put-attribute name="body" value="/WEB-INF/jsp/personnalspace/toporesa.jsp" />
+    </definition>
+
+    <definition name="myresalist" extends="base.definition">
+        <put-attribute name="title" value="Demandes de resa" />
+        <put-attribute name="body" value="/WEB-INF/jsp/personnalspace/myresalist.jsp" />
+    </definition>
+
+    <definition name="changetopo" extends="base.definition">
+        <put-attribute name="title" value="Change topo" />
+        <put-attribute name="body" value="/WEB-INF/jsp/personnalspace/changetopo.jsp" />
+    </definition>
+
+</tiles-definitions>
