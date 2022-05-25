@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.version>5.2.1.RELEASE</spring.version>
+        <spring.version>5.5.7</spring.version>
         <tiles.version>3.0.8</tiles.version>
         <confDirectory>/usr/local/conf</confDirectory>
     </properties>
